@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+    <div class="row mt-5">
+
+        <p>{% translate 'Спасибо, что провели сегодня некоторое время с веб-сайтом.' %}</p>
+
+        <p><a class="btn btn-primary" href="{% url 'users:logout' %}">{% translate 'Log in again' %}</a></p>
+    </div>
+
+{% endblock %}
