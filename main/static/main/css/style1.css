@@ -1,0 +1,84 @@
+body {
+    background-color: #227d72;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.footer-my {
+    height: 100%;
+    align-items: center !important;
+}
+
+.navbar {
+    background-color: aquamarine !important;
+}
+
+.body_main {
+    min-height: 100vh;
+}
+
+img.card-img-top {
+    max-width: 300px;
+}
+
+img.card-img-top1 {
+    max-width: 700px;
+}
+
+.new-line {
+    display: block;
+}
+
+.card-edit {
+    padding: 0!important;
+    display: grid;
+    grid-template-rows: 1fr 50px;
+}
+
+.card-edit a {
+    text-decoration: none;
+}
+
+.card-edit:hover {
+    background-color: antiquewhite;
+}
+
+.card-edit:hover .card-footer {
+    background-color: rgba(247, 247, 247, 03) !important;
+}
+
+.footer {
+    background-color: #042323;
+    min-height: 200px;
+
+}
+
+.web-set svg {
+    display: block;
+}
+
+.login-box svg {
+    font-size: 15px;
+}
+
+.login-box a {
+    display: block;
+}
+
+.login-box {
+
+}
+
+#hint_id_username,
+#hint_id_first_name,
+#hint_id_last_name,
+#hint_id_email,
+#hint_id_password1,
+#hint_id_password2{
+    color: #eee8e4 !important;
+}
+
+
+.my-gap {
+
+}

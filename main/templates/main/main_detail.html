@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ blog.slug }}
+{% endblock %}
+
+{% block content %}
+    <div class="card mt-5 d-flex mb-4">
+        <img src="{{ blog.img.url }}" class="card-img-top1" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{ blog.title }}</h5>
+            <p class="card-text">{{ blog.content }}</p>
+            <p class="card-text"><small class="">Автор: {{ blog.user|title }}</small></p>
+            <p class="card-text"><small class="text-muted">{{ blog.created }}</small></p>
+        </div>
+    </div>
+{% endblock %}

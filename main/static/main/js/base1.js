@@ -1,0 +1,1 @@
+#alert('я знаю javascript')

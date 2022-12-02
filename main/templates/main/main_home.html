@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <div class="card-group gap-3 mt-5 my-gap ">
+        {% for i in newsblog_list %}
+            <div class="row col-4 ">
+                <div class="card card-edit ">
+                    <a href="{{ i.get_absolute_url }}" class="new-line">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">{{ i.title }}</h5>
+                            <img src="{{ i.img.url }}" class="card-img-top" alt="{{ i.slug|truncatewords:5 }}">
+                            <p class="card-text text-dark">{{ i.content|truncatewords:20 }}</p>
+                        </div>
+                    </a>
+                    <div class="card-footer d-flex justify-content-between text-muted">
+                        {{ i.created }}
+                        <p> Автор - {{ i.user|title }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="paginate mt-2">
+        {% include 'main/main-component/paginate.html' with page=page_obj %}
+    </div>
+{% endblock %}
